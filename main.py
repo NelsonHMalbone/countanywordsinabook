@@ -19,6 +19,9 @@ def countWordsInFile(filepath, target_word):
 # running the function
 
 filepath = 'book.txt' # use your filepath
-target_word = 'the'   # replace with your word
+# instead of hard coding the word to look up we will have a user input
+user_input = input('Enter the word to count: ')
+
+target_word = user_input   # replace with your word
 word_count = countWordsInFile(filepath, target_word)
 print(f"The word '{target_word}' appears {word_count} times in the file.")
