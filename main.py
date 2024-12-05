@@ -4,7 +4,7 @@ def countWordsInFile(filepath, target_word):
     count = 0
 
     # open the file
-    with open(filepath, 'r') as file:
+    with open(filepath, 'r', encoding='utf-8') as file:
         # reading the content
         content = file.read()
 
